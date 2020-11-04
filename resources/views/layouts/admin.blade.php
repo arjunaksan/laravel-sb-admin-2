@@ -21,6 +21,7 @@
 
     <!-- Favicon -->
     <link href="{{ asset('img/favicon.png') }}" rel="icon" type="image/png">
+    <link href="{{asset('vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 </head>
 <body id="page-top">
 
@@ -34,7 +35,7 @@
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
-            <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            <div class="sidebar-brand-text mx-3">SyariHub</div>
         </a>
 
         <!-- Divider -->
@@ -68,6 +69,13 @@
             <a class="nav-link" href="{{ route('about') }}">
                 <i class="fas fa-fw fa-hands-helping"></i>
                 <span>{{ __('About') }}</span>
+            </a>
+        </li>
+        <!-- Nav Item - About -->
+        <li class="nav-item {{ Nav::isRoute('guru') }}">
+            <a class="nav-link" href="{{ route('guru') }}">
+                <i class="fas fa-fw fa-hands-helping"></i>
+                <span>{{ __('Guru') }}</span>
             </a>
         </li>
 
@@ -286,7 +294,7 @@
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Alejandro RH 2020</span>
+                    <span>Copyright &copy; SyariHub 2020</span>
                 </div>
             </div>
         </footer>
